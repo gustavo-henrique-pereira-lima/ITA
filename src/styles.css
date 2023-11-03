@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: mate;
+    font-family: 'Mate SC', serif;  
+    
+}
+
+body {
+    background-color: #DEDEDE;
+}
+li{
+    list-style: none;
+}
+a {  
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}

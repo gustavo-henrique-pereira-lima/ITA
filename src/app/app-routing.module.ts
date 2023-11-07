@@ -5,11 +5,10 @@ import { GraduacaoComponent } from './components/pages/graduacao/graduacao.compo
 import { HomeComponent } from './components/pages/home/home.component';
 import { CienciaDaComputacaoComponent } from './components/pages/ciencia-da-computacao/ciencia-da-computacao.component';
 import { PagDeAvisoComponent } from './components/pages/pag-de-aviso/pag-de-aviso.component';
+import { FormsComponent } from './forms/forms.component';
 
 const routes: Routes = [
   
-  {path: '**', redirectTo: 'login'},
-
   {path: 'login', component: LoginComponent},
 
   {path: 'graduacao', component: GraduacaoComponent},
@@ -18,7 +17,12 @@ const routes: Routes = [
 
   {path: 'ciencia-da-computacao', component: CienciaDaComputacaoComponent},
 
-  {path: 'aviso', component: PagDeAvisoComponent}
+  {path: 'form', component: FormsComponent},
+
+  {path: 'aviso', component: PagDeAvisoComponent},
+
+  /** Sempre devera ficar na ultima linha das rotas */
+  {path: '**', redirectTo: 'login'}
 
 ];
 

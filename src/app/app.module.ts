@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +11,8 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { GraduacaoComponent } from './components/pages/graduacao/graduacao.component';
 import { CienciaDaComputacaoComponent } from './components/pages/ciencia-da-computacao/ciencia-da-computacao.component';
 import { PagDeAvisoComponent } from './components/pages/pag-de-aviso/pag-de-aviso.component';
+import { CadastroComponent } from './components/pages/cadastro/cadastro.component';
+import { FormsComponent } from './forms/forms.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +23,14 @@ import { PagDeAvisoComponent } from './components/pages/pag-de-aviso/pag-de-avis
     HomeComponent,
     GraduacaoComponent,
     CienciaDaComputacaoComponent,
-    PagDeAvisoComponent
+    PagDeAvisoComponent,
+    CadastroComponent,
+    FormsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

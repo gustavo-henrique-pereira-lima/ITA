@@ -1,0 +1,21 @@
+main{
+    display: flex;
+    justify-content: center;
+}
+.container {
+    background-color: #FFFFFF;
+    width: 600px;
+    height: 500px;
+    border-radius: 30px;
+   
+}
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

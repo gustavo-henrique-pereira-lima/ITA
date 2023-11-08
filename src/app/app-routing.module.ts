@@ -6,10 +6,13 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { CienciaDaComputacaoComponent } from './components/pages/ciencia-da-computacao/ciencia-da-computacao.component';
 import { PagDeAvisoComponent } from './components/pages/pag-de-aviso/pag-de-aviso.component';
 import { FormsComponent } from './forms/forms.component';
+import { CadastroComponent } from './components/pages/cadastro/cadastro.component';
 
 const routes: Routes = [
   
   {path: 'login', component: LoginComponent},
+
+  {path: 'cadastro', component: CadastroComponent},
 
   {path: 'graduacao', component: GraduacaoComponent},
 

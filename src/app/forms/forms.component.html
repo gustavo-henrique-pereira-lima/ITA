@@ -8,7 +8,7 @@
 
 <div class="container">
     <div class="form">
-        <form action="#">
+        <form #form="ngForm">
 
             <div class="title">
                 <h1>Cadastre-se</h1>
@@ -18,24 +18,24 @@
                 <div class="bloco-input">
                     <div class="input-box">
                         <label for="firstname">Primeiro nome</label>
-                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+                        <input id="firstname" type="text" name="primeiroNome" placeholder="Digite seu primeiro nome" required ngModel>
                     </div>
     
                     <div class="input-box">
                         <label for="number">Celular</label>
-                        <input id="number" type="tel" name="number" placeholder="(xx) xxxxx-xxxx" required>
+                        <input id="number" type="tel" name="numero" placeholder="(xx) xxxxx-xxxx" required>
                     </div>
     
                     <div class="input-box">
                         <label for="password">Senha</label>
-                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                        <input id="password" type="password" name="senha" placeholder="Digite sua senha" required>
                     </div>
                 </div>
                 
                 <div class="bloco-input">
                     <div class="input-box">
                         <label for="lastname">Sobrenome</label>
-                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                        <input id="lastname" type="text" name="sobrenome" placeholder="Digite seu sobrenome" required>
                     </div>
 
                     <div class="input-box">
@@ -45,7 +45,7 @@
                     
                     <div class="input-box">
                         <label for="Confirmpassword">Confirme sua senha</label>
-                        <input id="Confirmpassword" type="password" name="Confirmpassword" placeholder="Confirme sua senha" required>
+                        <input id="Confirmpassword" type="confirmacaoDeSenha" name="Confirmpassword" placeholder="Confirme sua senha" required>
                     </div>
                 </div>
             </div>
@@ -80,9 +80,13 @@
             <br>
 
             <div class="voltar">
-                <button><a href="/login">Voltar</a></button>
+                <!--<button><a href="/login">Voltar</a></button>-->
+                <button routerLink="/login"><p>Voltar</p></button>
             </div>
 
         </form>
+
+        {{ form.value | json }}
+
     </div>
 </div>

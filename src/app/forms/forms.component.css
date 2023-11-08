@@ -97,7 +97,7 @@
 }
 
 .continue-button button:hover {
-    background-color: #6b63fff1;
+    background-color: #9c97fdf1;
 } 
 
 .continue-button button a {
@@ -117,10 +117,10 @@
 }
 
 .voltar button:hover {
-    background-color: #6b63fff1;
+    background-color: rgba(154, 149, 250, 0.945);
 } 
 
-.voltar button a {
+.voltar button P {
     text-decoration: none;
     font-size: 0.93rem;
     font-weight: 500;

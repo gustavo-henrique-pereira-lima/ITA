@@ -8,7 +8,7 @@
 
 <div class="container">
     <div class="form">
-        <form #form="ngForm">
+        <form [formGroup]="cadastroForm" (ngSubmit)="signUp()">
 
             <div class="title">
                 <h1>Cadastre-se</h1>
@@ -18,34 +18,34 @@
                 <div class="bloco-input">
                     <div class="input-box">
                         <label for="firstname">Primeiro nome</label>
-                        <input id="firstname" type="text" name="primeiroNome" placeholder="Digite seu primeiro nome" required ngModel>
+                        <input id="firstname" type="text" formControlName="primeiroNome" placeholder="Digite seu primeiro nome" required ngModel>
                     </div>
-    
+
                     <div class="input-box">
                         <label for="number">Celular</label>
-                        <input id="number" type="tel" name="numero" placeholder="(xx) xxxxx-xxxx" required>
+                        <input id="number" type="tel" formControlName="numero" placeholder="(xx) xxxxx-xxxx" required>
                     </div>
     
                     <div class="input-box">
                         <label for="password">Senha</label>
-                        <input id="password" type="password" name="senha" placeholder="Digite sua senha" required>
+                        <input id="password" type="password" formControlName="senha" placeholder="Digite sua senha" required>
                     </div>
                 </div>
                 
                 <div class="bloco-input">
                     <div class="input-box">
                         <label for="lastname">Sobrenome</label>
-                        <input id="lastname" type="text" name="sobrenome" placeholder="Digite seu sobrenome" required>
+                        <input id="lastname" type="text" formControlName="sobrenome" placeholder="Digite seu sobrenome" required>
                     </div>
 
                     <div class="input-box">
                         <label for="email">E-mail</label>
-                        <input id="email" type="email" name="email" placeholder="Digite seu email" required>
+                        <input id="email" type="email" formControlName="email" placeholder="Digite seu email" required>
                     </div>
                     
                     <div class="input-box">
                         <label for="Confirmpassword">Confirme sua senha</label>
-                        <input id="Confirmpassword" type="confirmacaoDeSenha" name="Confirmpassword" placeholder="Confirme sua senha" required>
+                        <input id="Confirmpassword" type="confirmacaoDeSenha" formControlName="confirmasenha" placeholder="Confirme sua senha" required>
                     </div>
                 </div>
             </div>
@@ -74,7 +74,7 @@
             </div>
 
             <div class="continue-button">
-                <button><a href="#">Continuar</a></button>
+                <button>Continuar</button>
             </div>
 
             <br>
@@ -86,7 +86,7 @@
 
         </form>
 
-        {{ form.value | json }}
+        
 
     </div>
 </div>

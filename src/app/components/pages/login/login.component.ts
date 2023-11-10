@@ -27,7 +27,7 @@ export class LoginComponent {
         if(user){
           alert("Login efetuado com sucesso!");
           this.loginForm.reset();
-          this.router.navigate(['dashboard'])
+          this.router.navigate(['home'])
         }else{
           alert("Usuario nao encontrado!")
         }

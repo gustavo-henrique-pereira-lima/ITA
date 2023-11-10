@@ -9,7 +9,6 @@
       "senha": "123456",
       "confirmasenha": "123456",
       "id": 1
-
     },
     {
       "primeiroNome": "ligia",
@@ -19,6 +18,16 @@
       "senha": "123456",
       "confirmasenha": "123456",
       "id": 2
+    },
+    {
+      "primeiroNome": "gustavo",
+      "sobrenome": "henrique",
+      "numero": "88888",
+      "sexo": "masculino",
+      "email": "teste@gmail.com",
+      "senha": "1234",
+      "confirmasenha": "1234",
+      "id": 3
     }
   ]
 }

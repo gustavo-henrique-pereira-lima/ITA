@@ -1,11 +1,13 @@
 <main>
     <div class="container">
-        <div class="login">
-            <p>Login</p>
-            <input type="text" placeholder="N de matricula">
-            <input type="text" placeholder="Senha">
-            <button>Entrar</button>
-            <button routerLink="/cadastro">Cadastre-se</button>
-        </div>
+        <form [formGroup]="loginForm" (ngSubmit)="login()">
+            <div class="login">
+                <p>Login</p>
+                <input type="text" placeholder="Digite seu E-mail" formControlName="email">
+                <input type="text" placeholder="Senha" formControlName="senha">
+                <button>Entrar</button>
+                <button routerLink="/cadastro">Cadastre-se</button>
+            </div>
+        </form>
     </div>
 </main>

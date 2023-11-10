@@ -3,29 +3,12 @@
     {
       "primeiroNome": "Gustavo",
       "sobrenome": "Henrique",
-      "numero": "275",
+      "numero": "98982332842",
+      "sexo": "masculino",
       "email": "gustavohenriquelive12@gmail.com",
       "senha": "123456",
       "confirmasenha": "123456",
       "id": 1
-    },
-    {
-      "primeiroNome": "ligia",
-      "sobrenome": "de paula",
-      "numero": "28",
-      "email": "gustavohenriquelive12@gmail.com",
-      "senha": "123456",
-      "confirmasenha": "123456",
-      "id": 2
-    },
-    {
-      "primeiroNome": "Gugu",
-      "sobrenome": "Lili",
-      "numero": "99999999999999",
-      "email": "gustavohenriquelive12@gmail.com",
-      "senha": "123456",
-      "confirmasenha": "123456",
-      "id": 3
     }
   ]
 }

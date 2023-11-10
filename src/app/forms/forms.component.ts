@@ -18,6 +18,7 @@ export class FormsComponent {
     primeiroNome: [''],
       sobrenome: [''],
       numero: [''],
+      sexo: [''],
       email: [''],
       senha: [''],
       confirmasenha: ['']

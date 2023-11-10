@@ -2,20 +2,93 @@ main{
     display: flex;
     justify-content: center;
 }
-.container {
-    background-color: #FFFFFF;
-    width: 600px;
-    height: 500px;
-    border-radius: 30px;
-   
+.form{
+    background-color: #fff;
+    padding: 30px;
+    width: 400px;
+    border-radius: 15px;
 }
-.login{
+
+.title{
+    display: flex;
+    justify-content:center ;
+}
+
+.input-box {
     display: flex;
     justify-content: center;
-    align-items: center;
+}
+
+.input-box {
+    display: flex;
     flex-direction: column;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-bottom: 1.1rem;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c
+}
+
+.input-box input:hover {
+    background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #6c63ff;
+}
+
+.input-box label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.input-box input::placeholder {
+    color: #000000be;
+}
+
+/**************************************/
+
+.continue-button button {
+    width: 100%;
+    border: none;
+    background-color: #6c63ff;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continue-button button:hover {
+    background-color: #9c97fdf1;
+} 
+
+.continue-button button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.voltar button{
+    width: 100%;
+    border: none;
+    background-color: #6c63ff;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.voltar button:hover {
+    background-color: rgba(154, 149, 250, 0.945);
+} 
+
+.voltar button P {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
 }

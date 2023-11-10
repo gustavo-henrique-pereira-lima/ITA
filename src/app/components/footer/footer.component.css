@@ -3,6 +3,7 @@ footer{
     min-height: 250px;
     background-color: #FFC700;
     display: flex;
+    justify-content: center;
     margin-top: 50px;
     box-shadow: 0px 0px 5px #535353;
 }

@@ -1,48 +1,51 @@
-header{
+.container{
     display: grid;
-    grid-template-columns: 170px auto ;
-    margin-top: 20px;
+    grid-template-columns: 310px auto;
 }
 
-/*****************************************/
+.circle-box{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+}
 
 .circulo{
     background-color: rgb(255, 255, 255);
     border: solid black;
-    width: 170px;
     height: 170px;
+    width: 170px;
     border-radius: 50%;
     box-shadow: 10px -10px 0px #0085FF;
 }
 
-/**************************************
-
-button{
-    border: 0;
-    background-color: #005eb6;
-    font-size: 20px;
-    cursor: pointer;
-}
-button:hover{
-        background-color: #0085FF;
-}
-
-/******************************************/
-#menu {
+.menu-group{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    padding: 20px;
 }
-#menu ul{
-    display: flex; 
-    border-radius: 20%;
-    height: max-content;
+
+.mini-menu{
+    display: flex;
+    justify-content: flex-end; 
 }
-#menu li {
-    padding: 10px;
-    background: #005eb6;
-    font-size: 25px;
-    
-}#menu li:hover {
-    background-color: #0085FF;
+
+.mini-menu-input{
+    display: flex;
+    gap: 40px ;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-box{
+    padding: 20px;
+    background-color: #FF82C5;
+    border-radius: 20px;
+}
+.menu-box a {
+    font-size: 20px;
 }

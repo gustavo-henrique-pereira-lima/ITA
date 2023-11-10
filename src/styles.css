@@ -5,13 +5,15 @@
     margin: 0;
     box-sizing: border-box;
     font-family: mate;
-    font-family: 'Mate SC', serif;  
+    font-family: 'Mate SC', serif;
     
 }
 
 body {
-    background-color: #DEDEDE;
+    background-image: linear-gradient(#31DAFF, #316BFF);
+    background-repeat: no-repeat;
 }
+
 li{
     list-style: none;
 }

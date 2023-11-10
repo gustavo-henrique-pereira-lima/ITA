@@ -28,6 +28,16 @@
       "senha": "1234",
       "confirmasenha": "1234",
       "id": 3
+    },
+    {
+      "primeiroNome": "Vitor",
+      "sobrenome": "Reginaldo",
+      "numero": "40028922",
+      "sexo": "naoIdentificado",
+      "email": "vitao@gmail.com",
+      "senha": "1234",
+      "confirmasenha": "1234",
+      "id": 4
     }
   ]
 }

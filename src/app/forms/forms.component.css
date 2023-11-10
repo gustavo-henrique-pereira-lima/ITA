@@ -8,10 +8,18 @@
     justify-content:center ;
 }
 
+.form{
+    background-color: #fff;
+    padding: 30px;
+    width: 600px;
+    border-radius: 15px;
+}
+
 /**********************INPUT********************/
 
 .input-group{
-   display: flex;    
+   display: flex;  
+   justify-content:center;  
 }
 
 .bloco-input{

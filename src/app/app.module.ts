@@ -15,6 +15,7 @@ import { CienciaDaComputacaoComponent } from './components/pages/ciencia-da-comp
 import { PagDeAvisoComponent } from './components/pages/pag-de-aviso/pag-de-aviso.component';
 import { CadastroComponent } from './components/pages/cadastro/cadastro.component';
 import { FormsComponent } from './forms/forms.component';
+import { UserRootComponent } from './components/user-root/user-root.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { FormsComponent } from './forms/forms.component';
     CienciaDaComputacaoComponent,
     PagDeAvisoComponent,
     CadastroComponent,
-    FormsComponent
+    FormsComponent,
+    UserRootComponent
   ],
   imports: [
     BrowserModule,

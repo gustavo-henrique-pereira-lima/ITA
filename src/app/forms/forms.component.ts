@@ -20,8 +20,8 @@ export class FormsComponent {
       numero: [''],
       sexo: [''],
       email: [''],
-      senha: [''],
-      confirmasenha: ['']
+      senha: ['']
+      
   })
 
   signUp(){

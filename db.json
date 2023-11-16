@@ -7,7 +7,6 @@
       "sexo": "masculino",
       "email": "gustavohenriquelive12@gmail.com",
       "senha": "123456",
-      "confirmasenha": "123456",
       "id": 1
     },
     {
@@ -16,7 +15,6 @@
       "numero": "28",
       "email": "gustavohenriquelive12@gmail.com",
       "senha": "123456",
-      "confirmasenha": "123456",
       "id": 2
     },
     {
@@ -26,7 +24,6 @@
       "sexo": "masculino",
       "email": "teste@gmail.com",
       "senha": "1234",
-      "confirmasenha": "1234",
       "id": 3
     },
     {
@@ -36,7 +33,6 @@
       "sexo": "naoIdentificado",
       "email": "vitao@gmail.com",
       "senha": "1234",
-      "confirmasenha": "1234",
       "id": 4
     }
   ]

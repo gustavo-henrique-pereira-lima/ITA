@@ -15,7 +15,7 @@ export class FormsComponent {
   constructor(private formBuilder : FormBuilder, private http: HttpClient, private router:Router) { }
 
   public cadastroForm: FormGroup = this.formBuilder.group({
-    primeiroNome: [''],
+      nome: [''],
       sobrenome: [''],
       numero: [''],
       sexo: [''],

@@ -1,39 +1,22 @@
 {
   "usuarios": [
     {
-      "primeiroNome": "Gustavo",
+      "nome": "",
       "sobrenome": "Henrique",
-      "numero": "98982332842",
+      "numero": "275",
       "sexo": "masculino",
       "email": "gustavohenriquelive12@gmail.com",
       "senha": "123456",
       "id": 1
     },
     {
-      "primeiroNome": "ligia",
-      "sobrenome": "de paula",
-      "numero": "28",
+      "nome": "Gustavo",
+      "sobrenome": "Henrique",
+      "numero": "275",
+      "sexo": "masculino",
       "email": "gustavohenriquelive12@gmail.com",
       "senha": "123456",
       "id": 2
-    },
-    {
-      "primeiroNome": "gustavo",
-      "sobrenome": "henrique",
-      "numero": "88888",
-      "sexo": "masculino",
-      "email": "teste@gmail.com",
-      "senha": "1234",
-      "id": 3
-    },
-    {
-      "primeiroNome": "Vitor",
-      "sobrenome": "Reginaldo",
-      "numero": "40028922",
-      "sexo": "naoIdentificado",
-      "email": "vitao@gmail.com",
-      "senha": "1234",
-      "id": 4
     }
   ]
 }

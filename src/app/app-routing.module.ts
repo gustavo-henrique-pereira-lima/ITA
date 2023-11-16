@@ -7,6 +7,7 @@ import { CienciaDaComputacaoComponent } from './components/pages/ciencia-da-comp
 import { PagDeAvisoComponent } from './components/pages/pag-de-aviso/pag-de-aviso.component';
 import { FormsComponent } from './forms/forms.component';
 import { CadastroComponent } from './components/pages/cadastro/cadastro.component';
+import { UserRootComponent } from './components/user-root/user-root.component';
 
 const routes: Routes = [
   
@@ -23,6 +24,8 @@ const routes: Routes = [
   {path: 'form', component: FormsComponent},
 
   {path: 'aviso', component: PagDeAvisoComponent},
+
+  {path: 'user', component: UserRootComponent},
 
   /** Sempre devera ficar na ultima linha das rotas */
   {path: '**', redirectTo: 'login'}

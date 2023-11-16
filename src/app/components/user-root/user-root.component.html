@@ -1,1 +1,42 @@
-<p>user-root works!</p>
+<form>
+    <input type="text" placeholder="nome" class="form-control">
+    <input type="text" placeholder="sobrenome" class="form-control">
+    <input type="number" placeholder="numero" class="form-control">
+    <input type="text" placeholder="sexo" class="form-control">
+    <input type="text" placeholder="email" class="form-control">
+    <input type="password" placeholder="senha" class="form-control">
+    
+    <input type="button" value="Cidade" class="btn btn-primary">
+    <input type="button" value="Alterar" class="btn btn-warning">
+    <input type="button" value="Remover" class="btn btn-danger">
+    <input type="button" value="Cancelar" class="btn btn-secondary">
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Sobrenome</th>
+            <th>numero</th>
+            <th>sexo</th>
+            <th>email</th>
+            <th>senha</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor=" let c of alunos">
+            <td>{{c.id}}</td>
+            <td>{{c.nome}}</td>
+            <td>{{c.sobrenome}}</td>
+            <td>{{c.numero}}</td>
+            <td>{{c.sexo}}</td>
+            <td>{{c.email}}</td>
+            <td>{{c.senha}}</td>
+            <td><button class="btn btn-success">Selecionar</button></td>
+        </tr>
+    </tbody>
+
+
+</table>

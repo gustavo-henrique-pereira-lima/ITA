@@ -24,5 +24,10 @@ export class UserRootComponent {
     .subscribe(retorno => this.alunos = retorno);
   }
 
+  //Metodo de incialização
+  ngOnInit(){
+    this.selecionar();
+  }
+
 
 }

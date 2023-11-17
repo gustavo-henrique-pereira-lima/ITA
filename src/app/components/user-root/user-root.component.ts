@@ -9,6 +9,9 @@ import { Aluno } from 'src/app/servicos/model/Aluno';
 })
 export class UserRootComponent {
 
+  // Objeto Aluno
+  aluno = new Aluno();
+
   // Variavel para visibilidade dos botoes
   //btnCadastro:boolean = true;
 
@@ -29,5 +32,10 @@ export class UserRootComponent {
     this.selecionar();
   }
 
+  //Metodo de cadastro
+  cadastrar():void{
+    this.servico.cadastrar(this.aluno)
+    .subscribe(retorno => {this.alunos.push(retorno); })
+  }
 
 }

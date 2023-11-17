@@ -19,4 +19,8 @@ export class ClienteService {
     return this.http.get<Aluno[]>(this.url);
   }
 
+  // Método para cadastrar Clientes
+  cadastrar(obj:Aluno):Observable<Aluno>{
+    return this.http.post<Aluno>(this.url, obj);
+  }
 }

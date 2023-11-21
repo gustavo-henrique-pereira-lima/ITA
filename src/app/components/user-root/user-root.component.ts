@@ -15,6 +15,9 @@ export class UserRootComponent {
   // Variavel para visibilidade dos botoes
   //btnCadastro:boolean = true;
 
+  // Variavel para visibilidade da tabela
+  tabela:boolean = true
+
   // JSON de Alunos
   alunos:Aluno[] = [];
 
@@ -35,7 +38,57 @@ export class UserRootComponent {
   //Metodo de cadastro
   cadastrar():void{
     this.servico.cadastrar(this.aluno)
-    .subscribe(retorno => {this.alunos.push(retorno); })
+    .subscribe(retorno => {
+
+      // cadastrar o cliente no array
+      this.alunos.push(retorno);
+
+      // limpar formulario
+      this.aluno = new Aluno();
+
+      // Mensagem
+      alert('Cliente cadastrado com sucesso!')
+    });
   }
+
+  // Metodo de selecao de clientes
+  selecionarAluno(posicao:number):void{
+    
+    //Selecionar cliente no vetor
+    this.aluno = this.alunos[posicao];
+
+    // Visibilidade dos botoes
+    //this.btnCadastro = false;
+
+    //Visibilidade da tabela
+    this.tabela = false;
+  }
+
+  // Metodo para editar alunos
+
+editar():void{
+  this.servico.editar(this.aluno)
+  .subscribe(retorno => {
+    //Obter posicao no array onde esta o cliente
+    let posicao = this.alunos.findIndex( obj => {
+      return obj.id == retorno.id;
+    });
+
+    // Alterar os dados do alun no array
+    this.alunos[posicao] = retorno;
+
+    //limpar formulario
+    this.aluno = new Aluno();
+
+    // visibilidade dos botoes
+    // this.btnCadastro = true;
+
+    //Visibilidade da tabela
+    this.tabela = true;
+
+    // Mensagem
+    alert('Aluno alterado com sucesso!');
+  });
+}
 
 }

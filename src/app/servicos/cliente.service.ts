@@ -14,13 +14,18 @@ export class ClienteService {
   // contrutor - Será responsavel por fazer requisicoes da API
   constructor(private http:HttpClient) { }
 
-  // Metodo para selecionar todos os clientes
+  // Metodo para selecionar todos os alunos
   selecionar():Observable<Aluno[]>{
     return this.http.get<Aluno[]>(this.url);
   }
 
-  // Método para cadastrar Clientes
+  // Método para cadastrar alunos
   cadastrar(obj:Aluno):Observable<Aluno>{
     return this.http.post<Aluno>(this.url, obj);
+  }
+
+  // Método para editar alunos
+  editar(obj:Aluno):Observable<Aluno>{
+    return this.http.put<Aluno>(this.url, obj);
   }
 }

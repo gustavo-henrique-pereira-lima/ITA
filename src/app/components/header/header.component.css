@@ -18,6 +18,10 @@
     border-radius: 50%;
     box-shadow: 10px -10px 0px #0085FF;
 }
+img{
+    margin-top: -8px;
+    margin-left: -2px;
+}
 
 .menu-group{
     display: flex;
@@ -47,5 +51,5 @@
     border-radius: 20px;
 }
 .menu-box a {
-    font-size: 20px;
+    font-size: 15px;
 }

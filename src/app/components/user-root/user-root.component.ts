@@ -13,7 +13,7 @@ export class UserRootComponent {
   aluno = new Aluno();
 
   // Variavel para visibilidade dos botoes
-  //btnCadastro:boolean = true;
+  btnCadastro:boolean = true;
 
   // Variavel para visibilidade da tabela
   tabela:boolean = true
@@ -58,14 +58,13 @@ export class UserRootComponent {
     this.aluno = this.alunos[posicao];
 
     // Visibilidade dos botoes
-    //this.btnCadastro = false;
+    this.btnCadastro = false;
 
     //Visibilidade da tabela
     this.tabela = false;
   }
 
-  // Metodo para editar alunos
-
+// Metodo para editar alunos
 editar():void{
   this.servico.editar(this.aluno)
   .subscribe(retorno => {
@@ -81,7 +80,7 @@ editar():void{
     this.aluno = new Aluno();
 
     // visibilidade dos botoes
-    // this.btnCadastro = true;
+    this.btnCadastro = true;
 
     //Visibilidade da tabela
     this.tabela = true;
@@ -89,6 +88,46 @@ editar():void{
     // Mensagem
     alert('Aluno alterado com sucesso!');
   });
+}
+
+// Metodo para remover alunos
+remover():void{
+  this.servico.remover(this.aluno.id)
+  .subscribe(retorno => {
+    //Obter posicao no array onde esta o cliente
+    let posicao = this.alunos.findIndex( obj => {
+      return obj.id == this.aluno.id;
+    });
+
+    //Apagar os dados do aluno no array
+    this.alunos.splice(posicao, 1);
+
+    //limpar formulario
+    this.aluno = new Aluno();
+
+    // visibilidade dos botoes
+    this.btnCadastro = true;
+
+    //Visibilidade da tabela
+    this.tabela = true;
+
+    // Mensagem
+    alert('Aluno removido com sucesso!');
+  });
+}
+
+// Metodo cancelar
+cancelar():void{
+  // Limpar formulario
+  this.aluno = new Aluno();
+
+  // Visibilidade dos botoes
+  this.btnCadastro = true;
+
+  // visibilidade da tabela
+  this.tabela = true;
+
+
 }
 
 }

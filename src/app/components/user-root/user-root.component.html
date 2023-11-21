@@ -4,12 +4,12 @@
     <input type="number" placeholder="numero"  class="form-control" name="numero" [(ngModel)]="aluno.numero">
     <input type="text"     placeholder="sexo"      class="form-control" name="sexo" [(ngModel)]="aluno.sexo">
     <input type="text"     placeholder="email"     class="form-control" name="email" [(ngModel)]="aluno.email">
-    <input type="password" placeholder="senha"     class="form-control" name="senha" [(ngModel)]="aluno.senha">
+    <input type="password" placeholder="Senha"     class="form-control" name="senha" [(ngModel)]="aluno.senha">
     
-    <input type="button" value="Cadastrar" class="btn btn-primary" (click)="cadastrar()">
-    <input type="button" value="Alterar"   class="btn btn-warning" (click)="editar()">
-    <input type="button" value="Remover"   class="btn btn-danger">
-    <input type="button" value="Cancelar"  class="btn btn-secondary">
+    <input type="button" value="Cadastrar" class="btn btn-primary"   *ngIf="btnCadastro" (click)="cadastrar()">
+    <input type="button" value="Alterar"   class="btn btn-warning"   *ngIf="!btnCadastro" (click)="editar()">
+    <input type="button" value="Remover"   class="btn btn-danger"    *ngIf="!btnCadastro" (click)="remover()">
+    <input type="button" value="Cancelar"  class="btn btn-secondary" *ngIf="!btnCadastro" (click)="cancelar()">
 </form>
 
 <table class="table" *ngIf="tabela">

@@ -18,6 +18,7 @@ import { FormsComponent } from './forms/forms.component';
 import { UserRootComponent } from './components/user-root/user-root.component';
 import { CarrosselComponent } from './components/carrossel/carrossel.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ADSComponent } from './components/pages/ads/ads.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     CadastroComponent,
     FormsComponent,
     UserRootComponent,
-    CarrosselComponent
+    CarrosselComponent,
+    ADSComponent
   ],
   imports: [
     BrowserModule,

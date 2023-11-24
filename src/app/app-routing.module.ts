@@ -8,6 +8,7 @@ import { PagDeAvisoComponent } from './components/pages/pag-de-aviso/pag-de-avis
 import { FormsComponent } from './forms/forms.component';
 import { CadastroComponent } from './components/pages/cadastro/cadastro.component';
 import { UserRootComponent } from './components/user-root/user-root.component';
+import { ADSComponent } from './components/pages/ads/ads.component';
 
 const routes: Routes = [
   
@@ -26,6 +27,8 @@ const routes: Routes = [
   {path: 'aviso', component: PagDeAvisoComponent},
 
   {path: 'user', component: UserRootComponent},
+  
+  {path: 'ads', component: ADSComponent},
 
   /** Sempre devera ficar na ultima linha das rotas */
   {path: '**', redirectTo: 'login'}

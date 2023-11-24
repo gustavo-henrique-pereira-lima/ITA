@@ -16,6 +16,8 @@ import { PagDeAvisoComponent } from './components/pages/pag-de-aviso/pag-de-avis
 import { CadastroComponent } from './components/pages/cadastro/cadastro.component';
 import { FormsComponent } from './forms/forms.component';
 import { UserRootComponent } from './components/user-root/user-root.component';
+import { CarrosselComponent } from './components/carrossel/carrossel.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -29,14 +31,16 @@ import { UserRootComponent } from './components/user-root/user-root.component';
     PagDeAvisoComponent,
     CadastroComponent,
     FormsComponent,
-    UserRootComponent
+    UserRootComponent,
+    CarrosselComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

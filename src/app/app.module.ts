@@ -17,7 +17,6 @@ import { CadastroComponent } from './components/pages/cadastro/cadastro.componen
 import { FormsComponent } from './forms/forms.component';
 import { UserRootComponent } from './components/user-root/user-root.component';
 import { CarrosselComponent } from './components/carrossel/carrossel.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ADSComponent } from './components/pages/ads/ads.component';
 
 @NgModule({
@@ -42,7 +41,7 @@ import { ADSComponent } from './components/pages/ads/ads.component';
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    NgbModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -9,37 +9,56 @@ Este projeto representa a concretização dos esforços da equipe do 4º semestr
 
 # Estrutura do Projeto
 
-° /.vscode: Contém configurações específicas do Visual Studio Code.
-° /src: Aqui reside o código-fonte principal do projeto.
-° /app: Contém os componentes principais da aplicação.
-° /components: Armazena os componentes reutilizáveis.
-° /services: Contém serviços utilizados para interações com a API ou lógica de negócios.
-° /.editorconfig: Configurações do Editor.
-° /.gitignore: Lista de arquivos e pastas a serem ignorados pelo Git.
-° /angular.json: Configurações específicas do Angular.
-° /db.json: Arquivo utilizado para configurar a conexão entre o back-end e o front-end.
-° /package-lock.json: Bloqueia as versões exatas das dependências instaladas para garantir consistência nas instalações futuras.
-° /package.json: Arquivo de configuração do Node.js, incluindo dependências do projeto.
-° /tsconfig.app.json: Configurações específicas do TypeScript para a compilação da aplicação.
-° /tsconfig.json: Configurações globais do TypeScript.
-° /tsconfig.spec.json: Configurações específicas do TypeScript para testes.
+* /.vscode: Contém configurações específicas do Visual Studio Code.
+  
+* /src: Aqui reside o código-fonte principal do projeto.
+  
+* /app: Contém os componentes principais da aplicação.
+  
+* /components: Armazena os componentes reutilizáveis.
+  
+* /services: Contém serviços utilizados para interações com a API ou lógica de negócios.
+  
+* /.editorconfig: Configurações do Editor.
+  
+* /.gitignore: Lista de arquivos e pastas a serem ignorados pelo Git.
+  
+* /angular.json: Configurações específicas do Angular.
+  
+* /db.json: Arquivo utilizado para configurar a conexão entre o back-end e o front-end.
+  
+* /package-lock.json: Bloqueia as versões exatas das dependências instaladas para garantir consistência nas instalações futuras.
+  
+* /package.json: Arquivo de configuração do Node.js, incluindo dependências do projeto.
+  
+* /tsconfig.app.json: Configurações específicas do TypeScript para a compilação da aplicação.
+  
+* /tsconfig.json: Configurações globais do TypeScript.
+  
+* /tsconfig.spec.json: Configurações específicas do TypeScript para testes.
 
 # Tecnologias Utilizadas
 
-° Angular: Um framework front-end poderoso que facilita o desenvolvimento de aplicativos web robustos e escaláveis. [Documentação Angular](https://angular.io/)
-° Bootstrap: Uma biblioteca de código aberto para design responsivo que agiliza o desenvolvimento de interfaces atraentes e compatíveis com dispositivos diversos. [Documentação Bootstrap](https://getbootstrap.com/)
+* Angular: Um framework front-end poderoso que facilita o desenvolvimento de aplicativos web robustos e escaláveis. [Documentação Angular](https://angular.io/)
+
+* Bootstrap: Uma biblioteca de código aberto para design responsivo que agiliza o desenvolvimento de interfaces atraentes e compatíveis com dispositivos diversos. [Documentação Bootstrap](https://getbootstrap.com/)
 
 # Bibliotecas Importantes:
-° BrowserModule: é necessário quando você está executando a aplicação em um navegador. Ele fornece serviços essenciais que são necessários para qualquer aplicação que será executada no navegador.
-° AppRoutingModule: é uma ferramenta poderosa para gerenciar a navegação em sua aplicação Angular. Ele fornece um conjunto de diretivas para definir a navegação entre componentes.
-° FormsModule: é utilizado para trabalhar com formulários em Angular. Ele exporta as diretivas necessárias para trabalhar com formulários template-driven.
-° HttpClientModule: permite que sua aplicação Angular interaja com serviços HTTP. Ele fornece um cliente HTTP para comunicação com o servidor.
-° ReactiveFormsModule: é utilizado para trabalhar com formulários reativos em Angular. Ele exporta as diretivas e serviços necessários para a criação e validação de formulários reativos.
-° NgbModule: pertence ao Bootstrap e é utilizado para integrar os componentes do Bootstrap ao Angular. Isso inclui coisas como modais, alertas e outras partes da biblioteca Bootstrap.
+* BrowserModule: é necessário quando você está executando a aplicação em um navegador. Ele fornece serviços essenciais que são necessários para qualquer aplicação que será executada no navegador.
+
+* AppRoutingModule: é uma ferramenta poderosa para gerenciar a navegação em sua aplicação Angular. Ele fornece um conjunto de diretivas para definir a navegação entre componentes.
+
+* FormsModule: é utilizado para trabalhar com formulários em Angular. Ele exporta as diretivas necessárias para trabalhar com formulários template-driven.
+
+* HttpClientModule: permite que sua aplicação Angular interaja com serviços HTTP. Ele fornece um cliente HTTP para comunicação com o servidor.
+
+* ReactiveFormsModule: é utilizado para trabalhar com formulários reativos em Angular. Ele exporta as diretivas e serviços necessários para a criação e validação de formulários reativos.
+
+* NgbModule: pertence ao Bootstrap e é utilizado para integrar os componentes do Bootstrap ao Angular. Isso inclui coisas como modais, alertas e outras partes da biblioteca Bootstrap.
 
 # Pré-requisitos
 
-[Incluir quaisquer dependências ou configurações necessárias para a instalação e execução do projeto]
+Node.js e dependência/configuração localizada em app.module.ts
 
 # Instruções de Instalação
 
@@ -68,19 +87,19 @@ Este projeto representa a concretização dos esforços da equipe do 4º semestr
 
 # Diretrizes para Contribuição
 
-° Mantenha um ambiente respeitoso e amigável.
-° Siga as convenções de codificação e estilo do projeto.
-° Certifique-se de testar suas alterações antes de enviar um pull request.
-° Seja descritivo em suas mensagens de commit e pull requests.
+* Mantenha um ambiente respeitoso e amigável.
+* Siga as convenções de codificação e estilo do projeto.
+* Certifique-se de testar suas alterações antes de enviar um pull request.
+* Seja descritivo em suas mensagens de commit e pull requests.
 
 Agradecemos antecipadamente por suas contribuições para tornar este projeto ainda mais incrível! 😄🚀
 
 # Contato
 
-° diosnemarlon@gmail.com 
-° gustavohenriquelive12@gmail.com
-° kauanprograma@gmail.com 
-° pauloteixeira1226@gmail.com
+* diosnemarlon@gmail.com 
+* gustavohenriquelive12@gmail.com
+* kauanprograma@gmail.com 
+* pauloteixeira1226@gmail.com
 
 # Status do Projeto
 
@@ -91,15 +110,15 @@ Fique à vontade para explorar o código-fonte, experimentar a aplicação e con
 # Agradecimentos e Reconhecimentos
 
 Equipe de Desenvolvimento:
-° Agradecemos a todos os membros da equipe (Diosne Marlon, Gustavo Henrique, Kauan Leandro e Paulo Sérgio) por seu trabalho árduo, dedicação e colaboração.
-° Angular e Bootstrap: Agradecemos às equipes por criar e manter frameworks poderosos que foram essenciais para o desenvolvimento deste projeto.
-° Universidade Nacional da Amazônia: Agradecemos à instituição acadêmica por fornecer suporte e oportunidades de aprendizado.
-° Mentor Igor Falcão: Expressamos nossa gratidão ao mentor Igor Falcão por sua orientação valiosa ao longo do desenvolvimento deste projeto.
+* Agradecemos a todos os membros da equipe (Diosne Marlon, Gustavo Henrique, Kauan Leandro e Paulo Sérgio) por seu trabalho árduo, dedicação e colaboração.
+* Angular e Bootstrap: Agradecemos às equipes por criar e manter frameworks poderosos que foram essenciais para o desenvolvimento deste projeto.
+* Universidade Nacional da Amazônia: Agradecemos à instituição acadêmica por fornecer suporte e oportunidades de aprendizado.
+* Mentor Igor Falcão: Expressamos nossa gratidão ao mentor Igor Falcão por sua orientação valiosa ao longo do desenvolvimento deste projeto.
 
 # Histórico de Versões
 
-° Angular: 16.x [https://angular.io/guide/update-to-version-16]
-° Boostrap: 5.3.2 [https://getbootstrap.com/docs/5.3/getting-started/download/] 
+* Angular: 16.x [https://angular.io/guide/update-to-version-16]
+* Boostrap: 5.3.2 [https://getbootstrap.com/docs/5.3/getting-started/download/] 
 
 # Code scaffolding (Andamento de código)
 
@@ -120,3 +139,7 @@ Execute `ng e2e` para executar os testes de ponta a ponta em uma plataforma de s
 #  Further help (Ajuda adicional)
 
 Para obter mais ajuda sobre o Angular CLI, utilize `ng help` ou consulte a página [Visão Geral e Referência de Comandos do Angular CLI](https://angular.io/cli).
+
+#Link de acesso direto ao site
+[https://instituto-tecnologia-amazonia.netlify.app/]
+
